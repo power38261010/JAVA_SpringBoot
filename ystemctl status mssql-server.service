@@ -1,0 +1,804 @@
+may 12 17:08:47 alejandro-MAX-L5 systemd[1]: Started Microsoft SQL Server Database Engine.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit mssql-server.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit mssql-server.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 20404.[0m
+may 12 17:08:52 alejandro-MAX-L5 sqlservr[589420]: The SQL Server End-User License Agreement (EULA) must be accepted before SQL
+may 12 17:08:52 alejandro-MAX-L5 sqlservr[589420]: [76B blob data]
+may 12 17:08:52 alejandro-MAX-L5 sqlservr[589420]: [47B blob data]
+may 12 17:08:52 alejandro-MAX-L5 sqlservr[589420]: 
+may 12 17:08:52 alejandro-MAX-L5 sqlservr[589420]: [77B blob data]
+may 12 17:08:52 alejandro-MAX-L5 sqlservr[589420]: [76B blob data]
+may 12 17:08:52 alejandro-MAX-L5 sqlservr[589420]: 
+may 12 17:08:52 alejandro-MAX-L5 systemd[1]: [0;1;39m[0;1;31m[0;1;39mmssql-server.service: Main process exited, code=exited, status=255/EXCEPTION[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStart= process belonging to unit mssql-server.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 255.[0m
+may 12 17:08:52 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service has entered the 'failed' state with result 'exit-code'.[0m
+may 12 17:08:52 alejandro-MAX-L5 systemd[1]: mssql-server.service: Consumed 2.755s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service completed and consumed the indicated resources.[0m
+may 12 17:08:52 alejandro-MAX-L5 systemd[1]: mssql-server.service: Scheduled restart job, restart counter is at 1.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit mssql-server.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+may 12 17:08:52 alejandro-MAX-L5 systemd[1]: Stopped Microsoft SQL Server Database Engine.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit mssql-server.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit mssql-server.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 20481 and the job result is done.[0m
+may 12 17:08:52 alejandro-MAX-L5 systemd[1]: mssql-server.service: Consumed 2.755s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service completed and consumed the indicated resources.[0m
+may 12 17:08:52 alejandro-MAX-L5 systemd[1]: Started Microsoft SQL Server Database Engine.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit mssql-server.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit mssql-server.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 20481.[0m
+may 12 17:08:54 alejandro-MAX-L5 sqlservr[589554]: The SQL Server End-User License Agreement (EULA) must be accepted before SQL
+may 12 17:08:54 alejandro-MAX-L5 sqlservr[589554]: [76B blob data]
+may 12 17:08:54 alejandro-MAX-L5 sqlservr[589554]: [47B blob data]
+may 12 17:08:54 alejandro-MAX-L5 sqlservr[589554]: 
+may 12 17:08:54 alejandro-MAX-L5 sqlservr[589554]: [77B blob data]
+may 12 17:08:54 alejandro-MAX-L5 sqlservr[589554]: [76B blob data]
+may 12 17:08:54 alejandro-MAX-L5 sqlservr[589554]: 
+may 12 17:08:54 alejandro-MAX-L5 systemd[1]: [0;1;39m[0;1;31m[0;1;39mmssql-server.service: Main process exited, code=exited, status=255/EXCEPTION[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStart= process belonging to unit mssql-server.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 255.[0m
+may 12 17:08:54 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service has entered the 'failed' state with result 'exit-code'.[0m
+may 12 17:08:54 alejandro-MAX-L5 systemd[1]: mssql-server.service: Consumed 2.325s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service completed and consumed the indicated resources.[0m
+may 12 17:08:55 alejandro-MAX-L5 systemd[1]: mssql-server.service: Scheduled restart job, restart counter is at 2.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit mssql-server.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+may 12 17:08:55 alejandro-MAX-L5 systemd[1]: Stopped Microsoft SQL Server Database Engine.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit mssql-server.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit mssql-server.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 20558 and the job result is done.[0m
+may 12 17:08:55 alejandro-MAX-L5 systemd[1]: mssql-server.service: Consumed 2.325s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service completed and consumed the indicated resources.[0m
+may 12 17:08:55 alejandro-MAX-L5 systemd[1]: Started Microsoft SQL Server Database Engine.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit mssql-server.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit mssql-server.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 20558.[0m
+may 12 17:08:56 alejandro-MAX-L5 sqlservr[589689]: The SQL Server End-User License Agreement (EULA) must be accepted before SQL
+may 12 17:08:56 alejandro-MAX-L5 sqlservr[589689]: [76B blob data]
+may 12 17:08:56 alejandro-MAX-L5 sqlservr[589689]: [47B blob data]
+may 12 17:08:56 alejandro-MAX-L5 sqlservr[589689]: 
+may 12 17:08:56 alejandro-MAX-L5 sqlservr[589689]: [77B blob data]
+may 12 17:08:56 alejandro-MAX-L5 sqlservr[589689]: [76B blob data]
+may 12 17:08:56 alejandro-MAX-L5 sqlservr[589689]: 
+may 12 17:08:56 alejandro-MAX-L5 systemd[1]: [0;1;39m[0;1;31m[0;1;39mmssql-server.service: Main process exited, code=exited, status=255/EXCEPTION[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStart= process belonging to unit mssql-server.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 255.[0m
+may 12 17:08:56 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service has entered the 'failed' state with result 'exit-code'.[0m
+may 12 17:08:56 alejandro-MAX-L5 systemd[1]: mssql-server.service: Consumed 2.117s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service completed and consumed the indicated resources.[0m
+may 12 17:08:57 alejandro-MAX-L5 systemd[1]: mssql-server.service: Scheduled restart job, restart counter is at 3.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit mssql-server.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+may 12 17:08:57 alejandro-MAX-L5 systemd[1]: Stopped Microsoft SQL Server Database Engine.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit mssql-server.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit mssql-server.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 20635 and the job result is done.[0m
+may 12 17:08:57 alejandro-MAX-L5 systemd[1]: mssql-server.service: Consumed 2.117s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service completed and consumed the indicated resources.[0m
+may 12 17:08:57 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Start request repeated too quickly.[0m
+may 12 17:08:57 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service has entered the 'failed' state with result 'exit-code'.[0m
+may 12 17:08:57 alejandro-MAX-L5 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Microsoft SQL Server Database Engine.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit mssql-server.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit mssql-server.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 20635 and the job result is failed.[0m
+may 12 17:12:40 alejandro-MAX-L5 systemd[1]: Started Microsoft SQL Server Database Engine.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit mssql-server.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit mssql-server.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 20789.[0m
+may 12 17:12:42 alejandro-MAX-L5 sqlservr[591043]: The SQL Server End-User License Agreement (EULA) must be accepted before SQL
+may 12 17:12:42 alejandro-MAX-L5 sqlservr[591043]: [76B blob data]
+may 12 17:12:42 alejandro-MAX-L5 sqlservr[591043]: [47B blob data]
+may 12 17:12:42 alejandro-MAX-L5 sqlservr[591043]: 
+may 12 17:12:42 alejandro-MAX-L5 sqlservr[591043]: [77B blob data]
+may 12 17:12:42 alejandro-MAX-L5 sqlservr[591043]: [76B blob data]
+may 12 17:12:42 alejandro-MAX-L5 sqlservr[591043]: 
+may 12 17:12:42 alejandro-MAX-L5 systemd[1]: [0;1;39m[0;1;31m[0;1;39mmssql-server.service: Main process exited, code=exited, status=255/EXCEPTION[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStart= process belonging to unit mssql-server.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 255.[0m
+may 12 17:12:42 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service has entered the 'failed' state with result 'exit-code'.[0m
+may 12 17:12:42 alejandro-MAX-L5 systemd[1]: mssql-server.service: Consumed 2.186s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service completed and consumed the indicated resources.[0m
+may 12 17:12:42 alejandro-MAX-L5 systemd[1]: mssql-server.service: Scheduled restart job, restart counter is at 1.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit mssql-server.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+may 12 17:12:42 alejandro-MAX-L5 systemd[1]: Stopped Microsoft SQL Server Database Engine.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit mssql-server.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit mssql-server.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 20866 and the job result is done.[0m
+may 12 17:12:42 alejandro-MAX-L5 systemd[1]: mssql-server.service: Consumed 2.186s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service completed and consumed the indicated resources.[0m
+may 12 17:12:42 alejandro-MAX-L5 systemd[1]: Started Microsoft SQL Server Database Engine.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit mssql-server.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit mssql-server.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 20866.[0m
+may 12 17:12:44 alejandro-MAX-L5 sqlservr[591177]: The SQL Server End-User License Agreement (EULA) must be accepted before SQL
+may 12 17:12:44 alejandro-MAX-L5 sqlservr[591177]: [76B blob data]
+may 12 17:12:44 alejandro-MAX-L5 sqlservr[591177]: [47B blob data]
+may 12 17:12:44 alejandro-MAX-L5 sqlservr[591177]: 
+may 12 17:12:44 alejandro-MAX-L5 sqlservr[591177]: [77B blob data]
+may 12 17:12:44 alejandro-MAX-L5 sqlservr[591177]: [76B blob data]
+may 12 17:12:44 alejandro-MAX-L5 sqlservr[591177]: 
+may 12 17:12:44 alejandro-MAX-L5 systemd[1]: [0;1;39m[0;1;31m[0;1;39mmssql-server.service: Main process exited, code=exited, status=255/EXCEPTION[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStart= process belonging to unit mssql-server.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 255.[0m
+may 12 17:12:44 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service has entered the 'failed' state with result 'exit-code'.[0m
+may 12 17:12:44 alejandro-MAX-L5 systemd[1]: mssql-server.service: Consumed 2.132s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service completed and consumed the indicated resources.[0m
+may 12 17:12:44 alejandro-MAX-L5 systemd[1]: mssql-server.service: Scheduled restart job, restart counter is at 2.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit mssql-server.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+may 12 17:12:44 alejandro-MAX-L5 systemd[1]: Stopped Microsoft SQL Server Database Engine.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit mssql-server.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit mssql-server.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 20943 and the job result is done.[0m
+may 12 17:12:44 alejandro-MAX-L5 systemd[1]: mssql-server.service: Consumed 2.132s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service completed and consumed the indicated resources.[0m
+may 12 17:12:44 alejandro-MAX-L5 systemd[1]: Started Microsoft SQL Server Database Engine.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit mssql-server.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit mssql-server.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 20943.[0m
+may 12 17:12:46 alejandro-MAX-L5 sqlservr[591322]: The SQL Server End-User License Agreement (EULA) must be accepted before SQL
+may 12 17:12:46 alejandro-MAX-L5 sqlservr[591322]: [76B blob data]
+may 12 17:12:46 alejandro-MAX-L5 sqlservr[591322]: [47B blob data]
+may 12 17:12:46 alejandro-MAX-L5 sqlservr[591322]: 
+may 12 17:12:46 alejandro-MAX-L5 sqlservr[591322]: [77B blob data]
+may 12 17:12:46 alejandro-MAX-L5 sqlservr[591322]: [76B blob data]
+may 12 17:12:46 alejandro-MAX-L5 sqlservr[591322]: 
+may 12 17:12:46 alejandro-MAX-L5 systemd[1]: [0;1;39m[0;1;31m[0;1;39mmssql-server.service: Main process exited, code=exited, status=255/EXCEPTION[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStart= process belonging to unit mssql-server.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 255.[0m
+may 12 17:12:46 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service has entered the 'failed' state with result 'exit-code'.[0m
+may 12 17:12:46 alejandro-MAX-L5 systemd[1]: mssql-server.service: Consumed 2.144s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service completed and consumed the indicated resources.[0m
+may 12 17:12:46 alejandro-MAX-L5 systemd[1]: mssql-server.service: Scheduled restart job, restart counter is at 3.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit mssql-server.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+may 12 17:12:46 alejandro-MAX-L5 systemd[1]: Stopped Microsoft SQL Server Database Engine.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit mssql-server.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit mssql-server.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 21020 and the job result is done.[0m
+may 12 17:12:46 alejandro-MAX-L5 systemd[1]: mssql-server.service: Consumed 2.144s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service completed and consumed the indicated resources.[0m
+may 12 17:12:46 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Start request repeated too quickly.[0m
+may 12 17:12:46 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service has entered the 'failed' state with result 'exit-code'.[0m
+may 12 17:12:46 alejandro-MAX-L5 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Microsoft SQL Server Database Engine.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit mssql-server.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit mssql-server.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 21020 and the job result is failed.[0m
+may 12 17:29:00 alejandro-MAX-L5 systemd[1]: Started Microsoft SQL Server Database Engine.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit mssql-server.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit mssql-server.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 21175.[0m
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]: This program has encountered a fatal error and cannot continue running at Sun May 12 17:29:01 2024
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]: The following diagnostic information is available:
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]:          Reason: 0x00000007
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]:          Status: 0xc0000022
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]:         Message: Unable to set persistent hive root.
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]:     Stack Trace:
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]:                  file://package6/windows/system32/sqlpal.dll+0x0000000000209C12
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]:                  file://package6/windows/system32/sqlpal.dll+0x0000000000208E59
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]:                  file://package6/windows/system32/sqlpal.dll+0x0000000000284C09
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]:                  file://package6/windows/system32/sqlpal.dll+0x000000000020723A
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]:                  file://package6/windows/system32/sqlpal.dll+0x0000000000207454
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]:                  file://package6/windows/system32/sqlpal.dll+0x000000000020627E
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]:                  file://package6/windows/system32/sqlpal.dll+0x00000000002050B2
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]:                  file://package6/windows/system32/sqlpal.dll+0x0000000000205539
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]:                  file://package6/windows/system32/sqlpal.dll+0x00000000003A0441
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]:         Process: 597545 - sqlservr
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]:          Thread: 597550 (application thread 0x8)
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]:     Instance Id: 3552d09c-b832-417d-b412-92bcb84187bc
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]:        Crash Id: d543f729-aa8d-4cfe-bf08-5c51cf000656
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]:     Build stamp: effe9bd9e9e037e3a198cb883d47a42fdd69b9c7296d712c35a80da9acb8593a
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]:    Distribution: Ubuntu 22.04.3 LTS
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]:      Processors: 8
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]:    Total Memory: 16438415360 bytes
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]:       Timestamp: Sun May 12 17:29:01 2024
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]:      Last errno: 13
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597545]: Last errno text: Permiso denegado
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597543]: Capturing a dump of 597545
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597543]: Successfully captured dump: /var/opt/mssql/log/core.sqlservr.5_12_2024_17_29_1.597545
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597543]: Executing: /opt/mssql/bin/handle-crash.sh with parameters
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597543]:      handle-crash.sh
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597543]:      /opt/mssql/bin/sqlservr
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597543]:      597545
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597543]:      /opt/mssql/bin
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597543]:      /var/opt/mssql/log/
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597543]:      
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597543]:      3552d09c-b832-417d-b412-92bcb84187bc
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597543]:      d543f729-aa8d-4cfe-bf08-5c51cf000656
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597543]:      
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597543]:      /var/opt/mssql/log/core.sqlservr.5_12_2024_17_29_1.597545
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597543]: Ubuntu 22.04.3 LTS
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597543]: Capturing core dump and information to /var/opt/mssql/log...
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597827]: dmesg: fallo al leer el «buffer» del núcleo: Operación no permitida
+may 12 17:29:01 alejandro-MAX-L5 journalctl[597830]: [0;1;39m[0;1;31m[0;1;39mHint: You are currently not seeing messages from other users and the system.[0m
+may 12 17:29:01 alejandro-MAX-L5 journalctl[597830]: [0;1;39m[0;1;31m[0;1;39m      Users in groups 'adm', 'systemd-journal' can see all messages.[0m
+may 12 17:29:01 alejandro-MAX-L5 journalctl[597830]: [0;1;39m[0;1;31m[0;1;39m      Pass -q to turn off this notice.[0m
+may 12 17:29:01 alejandro-MAX-L5 journalctl[597830]: [0;1;31m[0;1;39m[0;1;31mNo journal files were opened due to insufficient permissions.[0m
+may 12 17:29:01 alejandro-MAX-L5 journalctl[597832]: [0;1;39m[0;1;31m[0;1;39mHint: You are currently not seeing messages from other users and the system.[0m
+may 12 17:29:01 alejandro-MAX-L5 journalctl[597832]: [0;1;39m[0;1;31m[0;1;39m      Users in groups 'adm', 'systemd-journal' can see all messages.[0m
+may 12 17:29:01 alejandro-MAX-L5 journalctl[597832]: [0;1;39m[0;1;31m[0;1;39m      Pass -q to turn off this notice.[0m
+may 12 17:29:01 alejandro-MAX-L5 journalctl[597832]: [0;1;31m[0;1;39m[0;1;31mNo journal files were opened due to insufficient permissions.[0m
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597834]: tail: no se puede abrir '/var/log/syslog' para lectura: Permiso denegado
+may 12 17:29:01 alejandro-MAX-L5 sqlservr[597543]: dom 12 may 2024 17:29:01 -03 Capturing program information
+may 12 17:29:02 alejandro-MAX-L5 sqlservr[597543]: Dump already generated: /var/opt/mssql/log/core.sqlservr.5_12_2024_17_29_1.597545, moving to /var/opt/mssql/log/core.sqlservr.597545.temp/core.sqlservr.597545.gdmp
+may 12 17:29:02 alejandro-MAX-L5 sqlservr[597543]: Moving logs to /var/opt/mssql/log/core.sqlservr.597545.temp/log/paldumper-debug.log
+may 12 17:29:02 alejandro-MAX-L5 sqlservr[597543]: dom 12 may 2024 17:29:02 -03 Capturing program binaries
+may 12 17:29:05 alejandro-MAX-L5 sqlservr[598116]: chmod: cambiando los permisos de '/var/opt/mssql/log/errorlog': Operación no permitida
+may 12 17:29:05 alejandro-MAX-L5 sqlservr[598116]: chmod: cambiando los permisos de '/var/opt/mssql/log/HkEngineEventFile_0_133600184816420000.xel': Operación no permitida
+may 12 17:29:05 alejandro-MAX-L5 sqlservr[598116]: chmod: cambiando los permisos de '/var/opt/mssql/log/system_health_0_133600184849760000.xel': Operación no permitida
+may 12 17:29:05 alejandro-MAX-L5 sqlservr[598116]: chmod: cambiando los permisos de '/var/opt/mssql/log/errorlog.1': Operación no permitida
+may 12 17:29:05 alejandro-MAX-L5 sqlservr[598116]: chmod: cambiando los permisos de '/var/opt/mssql/log/log.trc': Operación no permitida
+may 12 17:29:05 alejandro-MAX-L5 sqlservr[597543]: dom 12 may 2024 17:29:05 -03 Compressing the dump files
+may 12 17:29:05 alejandro-MAX-L5 sqlservr[597543]: Core dump and information are being compressed in the background. When
+may 12 17:29:05 alejandro-MAX-L5 sqlservr[597543]: complete, they can be found in the following location:
+may 12 17:29:05 alejandro-MAX-L5 sqlservr[597543]:   /var/opt/mssql/log/core.sqlservr.05_12_2024_17_29_01.597545.tbz2
+may 12 17:29:05 alejandro-MAX-L5 systemd[1]: [0;1;39m[0;1;31m[0;1;39mmssql-server.service: Main process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStart= process belonging to unit mssql-server.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+may 12 17:29:05 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service has entered the 'failed' state with result 'exit-code'.[0m
+may 12 17:29:05 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598118 (handle-crash.sh) remains running after unit stopped.
+may 12 17:29:05 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 597545 (sqlservr) remains running after unit stopped.
+may 12 17:29:05 alejandro-MAX-L5 systemd[1]: mssql-server.service: Consumed 2.105s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service completed and consumed the indicated resources.[0m
+may 12 17:29:05 alejandro-MAX-L5 systemd[1]: mssql-server.service: Scheduled restart job, restart counter is at 1.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit mssql-server.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+may 12 17:29:05 alejandro-MAX-L5 systemd[1]: Stopped Microsoft SQL Server Database Engine.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit mssql-server.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit mssql-server.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 21252 and the job result is done.[0m
+may 12 17:29:05 alejandro-MAX-L5 systemd[1]: mssql-server.service: Consumed 2.308s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service completed and consumed the indicated resources.[0m
+may 12 17:29:05 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Found left-over process 598118 (sh) in control group while starting unit. Ignoring.[0m
+may 12 17:29:05 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mThis usually indicates unclean termination of a previous run, or service implementation deficiencies.[0m
+may 12 17:29:05 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Found left-over process 598119 (tar) in control group while starting unit. Ignoring.[0m
+may 12 17:29:05 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mThis usually indicates unclean termination of a previous run, or service implementation deficiencies.[0m
+may 12 17:29:05 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Found left-over process 598120 (sh) in control group while starting unit. Ignoring.[0m
+may 12 17:29:05 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mThis usually indicates unclean termination of a previous run, or service implementation deficiencies.[0m
+may 12 17:29:05 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Found left-over process 598121 (bzip2) in control group while starting unit. Ignoring.[0m
+may 12 17:29:05 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mThis usually indicates unclean termination of a previous run, or service implementation deficiencies.[0m
+may 12 17:29:05 alejandro-MAX-L5 systemd[1]: Started Microsoft SQL Server Database Engine.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit mssql-server.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit mssql-server.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 21252.[0m
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]: This program has encountered a fatal error and cannot continue running at Sun May 12 17:29:06 2024
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]: The following diagnostic information is available:
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]:          Reason: 0x00000007
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]:          Status: 0xc0000022
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]:         Message: Unable to set persistent hive root.
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]:     Stack Trace:
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]:                  file://package6/windows/system32/sqlpal.dll+0x0000000000209C12
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]:                  file://package6/windows/system32/sqlpal.dll+0x0000000000208E59
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]:                  file://package6/windows/system32/sqlpal.dll+0x0000000000284C09
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]:                  file://package6/windows/system32/sqlpal.dll+0x000000000020723A
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]:                  file://package6/windows/system32/sqlpal.dll+0x0000000000207454
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]:                  file://package6/windows/system32/sqlpal.dll+0x000000000020627E
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]:                  file://package6/windows/system32/sqlpal.dll+0x00000000002050B2
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]:                  file://package6/windows/system32/sqlpal.dll+0x0000000000205539
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]:                  file://package6/windows/system32/sqlpal.dll+0x00000000003A0441
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]:         Process: 598126 - sqlservr
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]:          Thread: 598131 (application thread 0x8)
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]:     Instance Id: 3552d09c-b832-417d-b412-92bcb84187bc
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]:        Crash Id: c5261678-c2d8-4337-b74f-c85bcc4ab0cd
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]:     Build stamp: effe9bd9e9e037e3a198cb883d47a42fdd69b9c7296d712c35a80da9acb8593a
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]:    Distribution: Ubuntu 22.04.3 LTS
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]:      Processors: 8
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]:    Total Memory: 16438415360 bytes
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]:       Timestamp: Sun May 12 17:29:06 2024
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]:      Last errno: 13
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598126]: Last errno text: Permiso denegado
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598124]: Capturing a dump of 598126
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598124]: Successfully captured dump: /var/opt/mssql/log/core.sqlservr.5_12_2024_17_29_6.598126
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598124]: Executing: /opt/mssql/bin/handle-crash.sh with parameters
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598124]:      handle-crash.sh
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598124]:      /opt/mssql/bin/sqlservr
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598124]:      598126
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598124]:      /opt/mssql/bin
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598124]:      /var/opt/mssql/log/
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598124]:      
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598124]:      3552d09c-b832-417d-b412-92bcb84187bc
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598124]:      c5261678-c2d8-4337-b74f-c85bcc4ab0cd
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598124]:      
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598124]:      /var/opt/mssql/log/core.sqlservr.5_12_2024_17_29_6.598126
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598124]: Ubuntu 22.04.3 LTS
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598124]: Capturing core dump and information to /var/opt/mssql/log...
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598414]: dmesg: fallo al leer el «buffer» del núcleo: Operación no permitida
+may 12 17:29:06 alejandro-MAX-L5 journalctl[598417]: [0;1;39m[0;1;31m[0;1;39mHint: You are currently not seeing messages from other users and the system.[0m
+may 12 17:29:06 alejandro-MAX-L5 journalctl[598417]: [0;1;39m[0;1;31m[0;1;39m      Users in groups 'adm', 'systemd-journal' can see all messages.[0m
+may 12 17:29:06 alejandro-MAX-L5 journalctl[598417]: [0;1;39m[0;1;31m[0;1;39m      Pass -q to turn off this notice.[0m
+may 12 17:29:06 alejandro-MAX-L5 journalctl[598417]: [0;1;31m[0;1;39m[0;1;31mNo journal files were opened due to insufficient permissions.[0m
+may 12 17:29:06 alejandro-MAX-L5 journalctl[598419]: [0;1;39m[0;1;31m[0;1;39mHint: You are currently not seeing messages from other users and the system.[0m
+may 12 17:29:06 alejandro-MAX-L5 journalctl[598419]: [0;1;39m[0;1;31m[0;1;39m      Users in groups 'adm', 'systemd-journal' can see all messages.[0m
+may 12 17:29:06 alejandro-MAX-L5 journalctl[598419]: [0;1;39m[0;1;31m[0;1;39m      Pass -q to turn off this notice.[0m
+may 12 17:29:06 alejandro-MAX-L5 journalctl[598419]: [0;1;31m[0;1;39m[0;1;31mNo journal files were opened due to insufficient permissions.[0m
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598421]: tail: no se puede abrir '/var/log/syslog' para lectura: Permiso denegado
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598124]: dom 12 may 2024 17:29:06 -03 Capturing program information
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598124]: Dump already generated: /var/opt/mssql/log/core.sqlservr.5_12_2024_17_29_6.598126, moving to /var/opt/mssql/log/core.sqlservr.598126.temp/core.sqlservr.598126.gdmp
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598124]: Moving logs to /var/opt/mssql/log/core.sqlservr.598126.temp/log/paldumper-debug.log
+may 12 17:29:06 alejandro-MAX-L5 sqlservr[598124]: dom 12 may 2024 17:29:06 -03 Capturing program binaries
+may 12 17:29:07 alejandro-MAX-L5 sqlservr[598684]: chmod: cambiando los permisos de '/var/opt/mssql/log/errorlog': Operación no permitida
+may 12 17:29:07 alejandro-MAX-L5 sqlservr[598684]: chmod: cambiando los permisos de '/var/opt/mssql/log/HkEngineEventFile_0_133600184816420000.xel': Operación no permitida
+may 12 17:29:07 alejandro-MAX-L5 sqlservr[598684]: chmod: cambiando los permisos de '/var/opt/mssql/log/system_health_0_133600184849760000.xel': Operación no permitida
+may 12 17:29:07 alejandro-MAX-L5 sqlservr[598684]: chmod: cambiando los permisos de '/var/opt/mssql/log/errorlog.1': Operación no permitida
+may 12 17:29:07 alejandro-MAX-L5 sqlservr[598684]: chmod: cambiando los permisos de '/var/opt/mssql/log/log.trc': Operación no permitida
+may 12 17:29:07 alejandro-MAX-L5 sqlservr[598124]: dom 12 may 2024 17:29:07 -03 Compressing the dump files
+may 12 17:29:07 alejandro-MAX-L5 sqlservr[598124]: Core dump and information are being compressed in the background. When
+may 12 17:29:07 alejandro-MAX-L5 sqlservr[598124]: complete, they can be found in the following location:
+may 12 17:29:07 alejandro-MAX-L5 sqlservr[598124]:   /var/opt/mssql/log/core.sqlservr.05_12_2024_17_29_06.598126.tbz2
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: [0;1;39m[0;1;31m[0;1;39mmssql-server.service: Main process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStart= process belonging to unit mssql-server.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service has entered the 'failed' state with result 'exit-code'.[0m
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598118 (sh) remains running after unit stopped.
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598119 (tar) remains running after unit stopped.
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598120 (sh) remains running after unit stopped.
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598121 (bzip2) remains running after unit stopped.
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598686 (sh) remains running after unit stopped.
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598687 (tar) remains running after unit stopped.
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598688 (sh) remains running after unit stopped.
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: mssql-server.service: Consumed 4.133s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service completed and consumed the indicated resources.[0m
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: mssql-server.service: Scheduled restart job, restart counter is at 2.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit mssql-server.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: Stopped Microsoft SQL Server Database Engine.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit mssql-server.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit mssql-server.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 21329 and the job result is done.[0m
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: mssql-server.service: Consumed 4.552s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service completed and consumed the indicated resources.[0m
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Found left-over process 598118 (sh) in control group while starting unit. Ignoring.[0m
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mThis usually indicates unclean termination of a previous run, or service implementation deficiencies.[0m
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Found left-over process 598119 (tar) in control group while starting unit. Ignoring.[0m
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mThis usually indicates unclean termination of a previous run, or service implementation deficiencies.[0m
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Found left-over process 598120 (sh) in control group while starting unit. Ignoring.[0m
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mThis usually indicates unclean termination of a previous run, or service implementation deficiencies.[0m
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Found left-over process 598121 (bzip2) in control group while starting unit. Ignoring.[0m
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mThis usually indicates unclean termination of a previous run, or service implementation deficiencies.[0m
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Found left-over process 598686 (sh) in control group while starting unit. Ignoring.[0m
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mThis usually indicates unclean termination of a previous run, or service implementation deficiencies.[0m
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Found left-over process 598687 (tar) in control group while starting unit. Ignoring.[0m
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mThis usually indicates unclean termination of a previous run, or service implementation deficiencies.[0m
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Found left-over process 598688 (sh) in control group while starting unit. Ignoring.[0m
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mThis usually indicates unclean termination of a previous run, or service implementation deficiencies.[0m
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Found left-over process 598689 (bzip2) in control group while starting unit. Ignoring.[0m
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mThis usually indicates unclean termination of a previous run, or service implementation deficiencies.[0m
+may 12 17:29:07 alejandro-MAX-L5 systemd[1]: Started Microsoft SQL Server Database Engine.
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit mssql-server.service has finished successfully[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit mssql-server.service has finished successfully.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 21329.[0m
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]: This program has encountered a fatal error and cannot continue running at Sun May 12 17:29:08 2024
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]: The following diagnostic information is available:
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]:          Reason: 0x00000007
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]:          Status: 0xc0000022
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]:         Message: Unable to set persistent hive root.
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]:     Stack Trace:
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]:                  file://package6/windows/system32/sqlpal.dll+0x0000000000209C12
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]:                  file://package6/windows/system32/sqlpal.dll+0x0000000000208E59
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]:                  file://package6/windows/system32/sqlpal.dll+0x0000000000284C09
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]:                  file://package6/windows/system32/sqlpal.dll+0x000000000020723A
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]:                  file://package6/windows/system32/sqlpal.dll+0x0000000000207454
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]:                  file://package6/windows/system32/sqlpal.dll+0x000000000020627E
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]:                  file://package6/windows/system32/sqlpal.dll+0x00000000002050B2
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]:                  file://package6/windows/system32/sqlpal.dll+0x0000000000205539
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]:                  file://package6/windows/system32/sqlpal.dll+0x00000000003A0441
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]:         Process: 598692 - sqlservr
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]:          Thread: 598697 (application thread 0x8)
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]:     Instance Id: 3552d09c-b832-417d-b412-92bcb84187bc
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]:        Crash Id: 8bf4f5ca-cbc8-41d4-93b6-c49c1c2c21a0
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]:     Build stamp: effe9bd9e9e037e3a198cb883d47a42fdd69b9c7296d712c35a80da9acb8593a
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]:    Distribution: Ubuntu 22.04.3 LTS
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]:      Processors: 8
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]:    Total Memory: 16438415360 bytes
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]:       Timestamp: Sun May 12 17:29:08 2024
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]:      Last errno: 13
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598692]: Last errno text: Permiso denegado
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598690]: Capturing a dump of 598692
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598690]: Successfully captured dump: /var/opt/mssql/log/core.sqlservr.5_12_2024_17_29_8.598692
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598690]: Executing: /opt/mssql/bin/handle-crash.sh with parameters
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598690]:      handle-crash.sh
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598690]:      /opt/mssql/bin/sqlservr
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598690]:      598692
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598690]:      /opt/mssql/bin
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598690]:      /var/opt/mssql/log/
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598690]:      
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598690]:      3552d09c-b832-417d-b412-92bcb84187bc
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598690]:      8bf4f5ca-cbc8-41d4-93b6-c49c1c2c21a0
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598690]:      
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598690]:      /var/opt/mssql/log/core.sqlservr.5_12_2024_17_29_8.598692
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598690]: Ubuntu 22.04.3 LTS
+may 12 17:29:08 alejandro-MAX-L5 sqlservr[598690]: Capturing core dump and information to /var/opt/mssql/log...
+may 12 17:29:09 alejandro-MAX-L5 sqlservr[598979]: dmesg: fallo al leer el «buffer» del núcleo: Operación no permitida
+may 12 17:29:09 alejandro-MAX-L5 journalctl[598982]: [0;1;39m[0;1;31m[0;1;39mHint: You are currently not seeing messages from other users and the system.[0m
+may 12 17:29:09 alejandro-MAX-L5 journalctl[598982]: [0;1;39m[0;1;31m[0;1;39m      Users in groups 'adm', 'systemd-journal' can see all messages.[0m
+may 12 17:29:09 alejandro-MAX-L5 journalctl[598982]: [0;1;39m[0;1;31m[0;1;39m      Pass -q to turn off this notice.[0m
+may 12 17:29:09 alejandro-MAX-L5 journalctl[598982]: [0;1;31m[0;1;39m[0;1;31mNo journal files were opened due to insufficient permissions.[0m
+may 12 17:29:09 alejandro-MAX-L5 journalctl[598984]: [0;1;39m[0;1;31m[0;1;39mHint: You are currently not seeing messages from other users and the system.[0m
+may 12 17:29:09 alejandro-MAX-L5 journalctl[598984]: [0;1;39m[0;1;31m[0;1;39m      Users in groups 'adm', 'systemd-journal' can see all messages.[0m
+may 12 17:29:09 alejandro-MAX-L5 journalctl[598984]: [0;1;39m[0;1;31m[0;1;39m      Pass -q to turn off this notice.[0m
+may 12 17:29:09 alejandro-MAX-L5 journalctl[598984]: [0;1;31m[0;1;39m[0;1;31mNo journal files were opened due to insufficient permissions.[0m
+may 12 17:29:09 alejandro-MAX-L5 sqlservr[598986]: tail: no se puede abrir '/var/log/syslog' para lectura: Permiso denegado
+may 12 17:29:09 alejandro-MAX-L5 sqlservr[598690]: dom 12 may 2024 17:29:09 -03 Capturing program information
+may 12 17:29:09 alejandro-MAX-L5 sqlservr[598690]: Dump already generated: /var/opt/mssql/log/core.sqlservr.5_12_2024_17_29_8.598692, moving to /var/opt/mssql/log/core.sqlservr.598692.temp/core.sqlservr.598692.gdmp
+may 12 17:29:09 alejandro-MAX-L5 sqlservr[598690]: Moving logs to /var/opt/mssql/log/core.sqlservr.598692.temp/log/paldumper-debug.log
+may 12 17:29:09 alejandro-MAX-L5 sqlservr[598690]: dom 12 may 2024 17:29:09 -03 Capturing program binaries
+may 12 17:29:09 alejandro-MAX-L5 sqlservr[599249]: chmod: cambiando los permisos de '/var/opt/mssql/log/errorlog': Operación no permitida
+may 12 17:29:09 alejandro-MAX-L5 sqlservr[599249]: chmod: cambiando los permisos de '/var/opt/mssql/log/HkEngineEventFile_0_133600184816420000.xel': Operación no permitida
+may 12 17:29:09 alejandro-MAX-L5 sqlservr[599249]: chmod: cambiando los permisos de '/var/opt/mssql/log/system_health_0_133600184849760000.xel': Operación no permitida
+may 12 17:29:09 alejandro-MAX-L5 sqlservr[599249]: chmod: cambiando los permisos de '/var/opt/mssql/log/errorlog.1': Operación no permitida
+may 12 17:29:09 alejandro-MAX-L5 sqlservr[599249]: chmod: cambiando los permisos de '/var/opt/mssql/log/log.trc': Operación no permitida
+may 12 17:29:09 alejandro-MAX-L5 sqlservr[598690]: dom 12 may 2024 17:29:09 -03 Compressing the dump files
+may 12 17:29:09 alejandro-MAX-L5 sqlservr[598690]: Core dump and information are being compressed in the background. When
+may 12 17:29:09 alejandro-MAX-L5 sqlservr[598690]: complete, they can be found in the following location:
+may 12 17:29:09 alejandro-MAX-L5 sqlservr[598690]:   /var/opt/mssql/log/core.sqlservr.05_12_2024_17_29_08.598692.tbz2
+may 12 17:29:09 alejandro-MAX-L5 systemd[1]: [0;1;39m[0;1;31m[0;1;39mmssql-server.service: Main process exited, code=exited, status=1/FAILURE[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit process exited[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAn ExecStart= process belonging to unit mssql-server.service has exited.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe process' exit code is 'exited' and its exit status is 1.[0m
+may 12 17:29:09 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service has entered the 'failed' state with result 'exit-code'.[0m
+may 12 17:29:09 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598118 (sh) remains running after unit stopped.
+may 12 17:29:09 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598119 (tar) remains running after unit stopped.
+may 12 17:29:09 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598120 (sh) remains running after unit stopped.
+may 12 17:29:09 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598121 (bzip2) remains running after unit stopped.
+may 12 17:29:09 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598686 (sh) remains running after unit stopped.
+may 12 17:29:09 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598687 (tar) remains running after unit stopped.
+may 12 17:29:09 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598688 (sh) remains running after unit stopped.
+may 12 17:29:09 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598689 (bzip2) remains running after unit stopped.
+may 12 17:29:09 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 599251 (sh) remains running after unit stopped.
+may 12 17:29:09 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 599252 (tar) remains running after unit stopped.
+may 12 17:29:09 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 599253 (sh) remains running after unit stopped.
+may 12 17:29:09 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 599254 (sh) remains running after unit stopped.
+may 12 17:29:09 alejandro-MAX-L5 systemd[1]: mssql-server.service: Consumed 6.932s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service completed and consumed the indicated resources.[0m
+may 12 17:29:10 alejandro-MAX-L5 systemd[1]: mssql-server.service: Scheduled restart job, restart counter is at 3.
+[0;38;5;245m░░ [0m[0;32mSubject: Automatic restarting of a unit has been scheduled[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mAutomatic restarting of the unit mssql-server.service has been scheduled, as the result for[0m
+[0;38;5;245m░░[0m [0;32mthe configured Restart= setting for the unit.[0m
+may 12 17:29:10 alejandro-MAX-L5 systemd[1]: Stopped Microsoft SQL Server Database Engine.
+[0;38;5;245m░░ [0m[0;32mSubject: A stop job for unit mssql-server.service has finished[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA stop job for unit mssql-server.service has finished.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 21406 and the job result is done.[0m
+may 12 17:29:10 alejandro-MAX-L5 systemd[1]: mssql-server.service: Consumed 7.614s CPU time.
+[0;38;5;245m░░ [0m[0;32mSubject: Resources consumed by unit runtime[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service completed and consumed the indicated resources.[0m
+may 12 17:29:10 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Start request repeated too quickly.[0m
+may 12 17:29:10 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service has entered the 'failed' state with result 'exit-code'.[0m
+may 12 17:29:10 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598118 (sh) remains running after unit stopped.
+may 12 17:29:10 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598119 (tar) remains running after unit stopped.
+may 12 17:29:10 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598120 (sh) remains running after unit stopped.
+may 12 17:29:10 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598121 (bzip2) remains running after unit stopped.
+may 12 17:29:10 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598686 (sh) remains running after unit stopped.
+may 12 17:29:10 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598687 (tar) remains running after unit stopped.
+may 12 17:29:10 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598688 (sh) remains running after unit stopped.
+may 12 17:29:10 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598689 (bzip2) remains running after unit stopped.
+may 12 17:29:10 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 599251 (sh) remains running after unit stopped.
+may 12 17:29:10 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 599252 (tar) remains running after unit stopped.
+may 12 17:29:10 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 599253 (sh) remains running after unit stopped.
+may 12 17:29:10 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 599254 (bzip2) remains running after unit stopped.
+may 12 17:29:10 alejandro-MAX-L5 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Microsoft SQL Server Database Engine.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit mssql-server.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit mssql-server.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 21406 and the job result is failed.[0m
+may 12 17:29:11 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Start request repeated too quickly.[0m
+may 12 17:29:11 alejandro-MAX-L5 systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmssql-server.service: Failed with result 'exit-code'.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: Unit failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe unit mssql-server.service has entered the 'failed' state with result 'exit-code'.[0m
+may 12 17:29:11 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598118 (sh) remains running after unit stopped.
+may 12 17:29:11 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598119 (tar) remains running after unit stopped.
+may 12 17:29:11 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598120 (sh) remains running after unit stopped.
+may 12 17:29:11 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598121 (bzip2) remains running after unit stopped.
+may 12 17:29:11 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598686 (sh) remains running after unit stopped.
+may 12 17:29:11 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598687 (tar) remains running after unit stopped.
+may 12 17:29:11 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598688 (sh) remains running after unit stopped.
+may 12 17:29:11 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 598689 (bzip2) remains running after unit stopped.
+may 12 17:29:11 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 599251 (sh) remains running after unit stopped.
+may 12 17:29:11 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 599252 (tar) remains running after unit stopped.
+may 12 17:29:11 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 599253 (sh) remains running after unit stopped.
+may 12 17:29:11 alejandro-MAX-L5 systemd[1]: mssql-server.service: Unit process 599254 (bzip2) remains running after unit stopped.
+may 12 17:29:11 alejandro-MAX-L5 systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start Microsoft SQL Server Database Engine.[0m
+[0;38;5;245m░░ [0m[0;32mSubject: A start job for unit mssql-server.service has failed[0m
+[0;38;5;245m░░[0m [0;32mDefined-By: systemd[0m
+[0;38;5;245m░░[0m [0;32mSupport: http://www.ubuntu.com/support[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mA start job for unit mssql-server.service has finished with a failure.[0m
+[0;38;5;245m░░[0m [0;32m[0m
+[0;38;5;245m░░[0m [0;32mThe job identifier is 21483 and the job result is failed.[0m
