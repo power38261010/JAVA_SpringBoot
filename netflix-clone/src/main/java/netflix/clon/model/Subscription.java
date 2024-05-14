@@ -16,6 +16,9 @@ public class Subscription {
     @ManyToMany(mappedBy = "subscriptions")
     private Set<Movie> movies;
 
+    @OneToMany(mappedBy = "subscription")
+    private Set<User> users;
+
     public Subscription() {
     }
 
@@ -54,5 +57,13 @@ public class Subscription {
 
     public void setMovies(Set<Movie> movies) {
         this.movies = movies;
+    }
+
+    public Set<User> getUsers() {
+        return users;
+    }
+
+    public void setUsers(Set<User> users) {
+        this.users = users;
     }
 }

@@ -13,6 +13,8 @@ public class Movie {
     private String title;
     private String description;
     private String genre;
+    private Text url_image;
+    private Text url_trailer;
 
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
@@ -69,5 +71,22 @@ public class Movie {
 
     public void setSubscriptions(Set<Subscription> subscriptions) {
         this.subscriptions = subscriptions;
+    }
+
+    public Text getUrl_image() {
+        return url_image;
+    }
+
+    public void setDescription(Text url_image) {
+        this.url_image = url_image;
+    }
+
+
+    public Text getUrl_trailer() {
+        return url_trailer;
+    }
+
+    public void setUrl_trailer(Text url_trailer) {
+        this.url_trailer = url_trailer;
     }
 }
