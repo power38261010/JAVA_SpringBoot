@@ -1,20 +1,40 @@
 package com.netflix.clon.model;
-
-import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Set;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
+
 @Entity
+@Table(name = "movies")
 public class Movie {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(unique = true, nullable = false)
     private String title;
+
+    @Column( nullable = false)
     private String description;
+
+    @Column(unique = true, nullable = false)
     private String genre;
-    private Text url_image;
-    private Text url_trailer;
+
+    @Column(columnDefinition = "TEXT", unique = true, nullable = false)
+    private String url_image;
+
+    @Column(columnDefinition = "TEXT",unique = true, nullable = false)
+    private String url_trailer;
 
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
@@ -73,20 +93,31 @@ public class Movie {
         this.subscriptions = subscriptions;
     }
 
-    public Text getUrl_image() {
+    public String getUrl_image() {
         return url_image;
     }
 
-    public void setDescription(Text url_image) {
+    public void setUrl_image(String url_image) {
         this.url_image = url_image;
     }
 
 
-    public Text getUrl_trailer() {
+    public String getUrl_trailer() {
         return url_trailer;
     }
 
-    public void setUrl_trailer(Text url_trailer) {
+    public void setUrl_trailer(String url_trailer) {
         this.url_trailer = url_trailer;
+    }
+
+    /**
+     *
+     * @param subscription
+     */
+    public void addSubscription(Subscription subscription) {
+        if (subscriptions == null) {
+            subscriptions = new HashSet<>();
+        }
+        subscriptions.add(subscription);
     }
 }

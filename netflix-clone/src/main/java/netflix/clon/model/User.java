@@ -1,21 +1,31 @@
 package com.netflix.clon.model;
 
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
 import javax.persistence.*;
-import java.util.Set;
+import java.util.Collection;
+import java.util.Collections;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Entity
-public class User {
+@Table(name = "users")
+public class User implements UserDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(unique = true, nullable = false)
     private String username;
-    private String password;
-    private boolean isAdmin;
 
-    @OneToMany(mappedBy = "subscription")
-    private Set<User> users;
+    @Column(nullable = false)
+    private String password;
+
+    @Column(nullable = false)
+    private boolean isAdmin;
 
     @ManyToOne
     @JoinColumn(name = "subscription_id")
@@ -38,6 +48,7 @@ public class User {
         this.id = id;
     }
 
+    @Override
     public String getUsername() {
         return username;
     }
@@ -46,6 +57,7 @@ public class User {
         this.username = username;
     }
 
+    @Override
     public String getPassword() {
         return password;
     }
@@ -62,19 +74,37 @@ public class User {
         isAdmin = admin;
     }
 
-    public Set<UserRole> getRoles() {
-        return roles;
-    }
-
-    public void setRoles(Set<UserRole> roles) {
-        this.roles = roles;
-    }
-
     public Subscription getSubscription() {
-        return subscription;
+    return subscription;
     }
 
     public void setSubscription(Subscription subscription) {
         this.subscription = subscription;
+    }
+
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        // Define los roles del usuario; aquí asumimos que todos los usuarios tienen el mismo rol
+        return Collections.singletonList(new SimpleGrantedAuthority("ROLE_USER"));
+    }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return true; // Implementa la lógica según sea necesario
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return true; // Implementa la lógica según sea necesario
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true; // Implementa la lógica según sea necesario
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return true; // Implementa la lógica según sea necesario
     }
 }

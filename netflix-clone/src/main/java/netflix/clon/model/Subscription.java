@@ -1,23 +1,42 @@
 package com.netflix.clon.model;
 
-import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Set;
 
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+/**
+ *
+ * @author alejandro
+ */
 @Entity
+@Table(name = "subscriptions")
 public class Subscription {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(unique = true, nullable = false)
     private String type;
+
+    @Column(unique = true, nullable = false)
     private double price;
 
-    @ManyToMany(mappedBy = "subscriptions")
-    private Set<Movie> movies;
+    @ManyToMany(fetch = FetchType.EAGER)
+    private Set<Movie> movies = new HashSet<>();
 
-    @OneToMany(mappedBy = "subscription")
-    private Set<User> users;
+    @OneToMany(mappedBy = "subscription", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private Set<User> users = new HashSet<>();
 
     public Subscription() {
     }
@@ -65,5 +84,19 @@ public class Subscription {
 
     public void setUsers(Set<User> users) {
         this.users = users;
+    }
+
+    public void addUser(User user) {
+        if (users == null) {
+            users = new HashSet<>();
+        }
+        users.add(user);
+    }
+
+    public void addMovie(Movie movie) {
+        if (movies == null) {
+            movies = new HashSet<>();
+        }
+        movies.add(movie);
     }
 }

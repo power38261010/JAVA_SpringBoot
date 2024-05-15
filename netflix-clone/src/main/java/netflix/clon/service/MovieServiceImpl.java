@@ -2,6 +2,7 @@ package com.netflix.clon.service;
 
 import com.netflix.clon.model.Movie;
 import com.netflix.clon.repository.MovieRepository;
+import com.netflix.clon.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

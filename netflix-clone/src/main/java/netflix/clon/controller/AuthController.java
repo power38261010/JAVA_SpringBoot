@@ -4,13 +4,15 @@ import com.netflix.clon.dto.LoginRequest;
 import com.netflix.clon.dto.LoginResponse;
 import com.netflix.clon.dto.RegisterRequest;
 import com.netflix.clon.model.User;
-import com.netflix.clon.security.jwt.JwtTokenProvider;
 import com.netflix.clon.service.UserService;
+import com.netflix.clon.security.jwt.JwtTokenProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/auth")
@@ -29,11 +31,11 @@ public class AuthController {
 
     @PostMapping("/login")
     public ResponseEntity<LoginResponse> login(@RequestBody LoginRequest loginRequest) {
-        User user = userService.findByUsername(loginRequest.getUsername());
-        if (user == null || !passwordEncoder.matches(loginRequest.getPassword(), user.getPassword())) {
+        UserDetails userDetails = userService.findByUsername(loginRequest.getUsername());
+        if (userDetails == null || !passwordEncoder.matches(loginRequest.getPassword(), userDetails.getPassword())) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
         }
-        String token = jwtTokenProvider.generateToken(user.getUsername());
+        String token = jwtTokenProvider.generateToken(userDetails);
         return ResponseEntity.ok(new LoginResponse(token));
     }
 
