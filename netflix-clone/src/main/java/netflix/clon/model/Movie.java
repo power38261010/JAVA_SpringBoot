@@ -24,16 +24,16 @@ public class Movie {
     @Column(unique = true, nullable = false)
     private String title;
 
-    @Column( nullable = false)
+    @Column( nullable = true)
     private String description;
 
-    @Column(unique = true, nullable = false)
+    @Column( nullable = true)
     private String genre;
 
-    @Column(columnDefinition = "TEXT", unique = true, nullable = false)
+    @Column(columnDefinition = "TEXT", unique = false, nullable = true)
     private String url_image;
 
-    @Column(columnDefinition = "TEXT",unique = true, nullable = false)
+    @Column(columnDefinition = "TEXT",unique = false, nullable = true)
     private String url_trailer;
 
     @ManyToMany(cascade = CascadeType.ALL)
@@ -42,7 +42,7 @@ public class Movie {
             joinColumns = @JoinColumn(name = "movie_id"),
             inverseJoinColumns = @JoinColumn(name = "subscription_id")
     )
-    private Set<Subscription> subscriptions;
+    private Set<Subscription> subscriptions = new HashSet<>();
 
     public Movie() {
     }

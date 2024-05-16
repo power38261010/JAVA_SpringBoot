@@ -1,9 +1,14 @@
 package com.netflix.clon.service;
 
-import com.netflix.clon.model.User;
-
 import java.util.List;
 
+import com.netflix.clon.model.Subscription;
+import com.netflix.clon.model.User;
+
+/**
+ *
+ * @author alejandro
+ */
 public interface UserService {
 
     List<User> getAllUsers();
@@ -17,4 +22,6 @@ public interface UserService {
     void deleteUser(Long id);
 
     User findByUsername(String username);
+
+    User findOrCreateUser(String username, String password, boolean isAdmin, Subscription subscription);
 }

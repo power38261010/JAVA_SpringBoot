@@ -15,4 +15,6 @@ public interface SubscriptionService {
     Subscription updateSubscription(Long id, Subscription subscription);
 
     void deleteSubscription(Long id);
+
+    Subscription findOrCreateSubscription(String type, double price);
 }

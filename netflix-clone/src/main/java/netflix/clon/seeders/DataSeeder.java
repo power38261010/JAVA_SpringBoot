@@ -6,108 +6,81 @@ import java.util.Set;
 import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.github.javafaker.Faker;
-import com.netflix.clon.model.Movie;
 import com.netflix.clon.model.Subscription;
-import com.netflix.clon.model.User;
-import com.netflix.clon.repository.MovieRepository;
 import com.netflix.clon.repository.SubscriptionRepository;
-import com.netflix.clon.repository.UserRepository;
+import com.netflix.clon.service.MovieService;
+import com.netflix.clon.service.SubscriptionService;
+import com.netflix.clon.service.UserService;
 
+
+
+/**
+ *
+ * @author alejandro
+ */
 @Component
 public class DataSeeder {
 
     @Autowired
-    private UserRepository userRepository;
+    private UserService userService;
+
+    @Autowired
+    private SubscriptionService subscriptionService;
 
     @Autowired
     private SubscriptionRepository subscriptionRepository;
 
     @Autowired
-    private MovieRepository movieRepository;
+    private MovieService movieService;
 
-    @Transactional
-    public User findOrCreateUser(String username, String password, boolean isAdmin, Subscription subscription) {
-        User existingUser = userRepository.findByUsername(username);
+    @Autowired
+    private final BCryptPasswordEncoder passwordEncoder;
 
-        if (existingUser != null) {
-            return existingUser;
-        } else {
-            User newUser = new User(username, password, isAdmin);
-            newUser.setSubscription(subscription);
-            userRepository.save(newUser);
-
-            // Add user to subscription's user set
-            // subscription.addUser(newUser);
-
-            return newUser;
-        }
-    }
-
-    @Transactional
-    public Movie findOrCreateMovie(String title, String description, String genre, String url_image, String url_trailer, Set<Subscription> subscriptions) {
-        Movie existingMovie = movieRepository.findByTitle(title);
-
-        if (existingMovie != null) {
-            return existingMovie;
-        } else {
-            Movie newMovie = new Movie(title, description, genre);
-            newMovie.setUrl_image(url_image);
-            newMovie.setUrl_trailer(url_trailer);
-
-            for (Subscription subscription : subscriptions) {
-                newMovie.addSubscription(subscription);
-                subscription.addMovie(newMovie);
-            }
-
-            movieRepository.save(newMovie);
-            return newMovie;
-        }
-    }
-
-    @Transactional
-    public Subscription findOrCreateSubscription(String type, double price) {
-        Subscription existingSubscription = subscriptionRepository.findByType(type);
-
-        if (existingSubscription != null) {
-            return existingSubscription;
-        } else {
-            Subscription newSubscription = new Subscription(type, price);
-            subscriptionRepository.save(newSubscription);
-            return newSubscription;
-        }
+    public DataSeeder(BCryptPasswordEncoder passwordEncoder) {
+        this.passwordEncoder = passwordEncoder;
     }
     
     @PostConstruct
+    @Transactional
     public void seedData() {
         Faker faker = new Faker();
-        String[] url_images = {"https://www.google.com/search?q=film+netflix&client=ubuntu-chr&hs=cb&sca_esv=92ceaeaabaa7c149&sca_upv=1&udm=2&biw=1178&bih=530&sxsrf=ADLYWIL75Pt5ORRACx9EhrkqKhV5WIjmiA%3A1715746821624&ei=BThEZozdJfTJ1sQP45aTKA&ved=0ahUKEwjM887-5o6GAxX0pJUCHWPLBAUQ4dUDCA8&uact=5&oq=film+netflix&gs_lp=Egxnd3Mtd2l6LXNlcnAiDGZpbG0gbmV0ZmxpeDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSIAMUKsBWIAKcAJ4AJABAJgBaKAB8QKqAQMzLjG4AQPIAQD4AQGYAgagArMDwgIKEAAYgAQYQxiKBcICBhAAGAgYHsICBxAAGIAEGBPCAggQABgTGAcYHpgDAIgGAZIHAzQuMqAHmRU&sclient=gws-wiz-serp#vhid=qnFOxSV0TQqNyM&vssid=mosaic","https://www.google.com/search?q=film+netflix&client=ubuntu-chr&hs=cb&sca_esv=92ceaeaabaa7c149&sca_upv=1&udm=2&biw=1178&bih=530&sxsrf=ADLYWIL75Pt5ORRACx9EhrkqKhV5WIjmiA%3A1715746821624&ei=BThEZozdJfTJ1sQP45aTKA&ved=0ahUKEwjM887-5o6GAxX0pJUCHWPLBAUQ4dUDCA8&uact=5&oq=film+netflix&gs_lp=Egxnd3Mtd2l6LXNlcnAiDGZpbG0gbmV0ZmxpeDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSIAMUKsBWIAKcAJ4AJABAJgBaKAB8QKqAQMzLjG4AQPIAQD4AQGYAgagArMDwgIKEAAYgAQYQxiKBcICBhAAGAgYHsICBxAAGIAEGBPCAggQABgTGAcYHpgDAIgGAZIHAzQuMqAHmRU&sclient=gws-wiz-serp#vhid=9pcego3MkLf0bM&vssid=mosaic","https://www.google.com/search?q=film+netflix&client=ubuntu-chr&hs=cb&sca_esv=92ceaeaabaa7c149&sca_upv=1&udm=2&biw=1178&bih=530&sxsrf=ADLYWIL75Pt5ORRACx9EhrkqKhV5WIjmiA%3A1715746821624&ei=BThEZozdJfTJ1sQP45aTKA&ved=0ahUKEwjM887-5o6GAxX0pJUCHWPLBAUQ4dUDCA8&uact=5&oq=film+netflix&gs_lp=Egxnd3Mtd2l6LXNlcnAiDGZpbG0gbmV0ZmxpeDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSIAMUKsBWIAKcAJ4AJABAJgBaKAB8QKqAQMzLjG4AQPIAQD4AQGYAgagArMDwgIKEAAYgAQYQxiKBcICBhAAGAgYHsICBxAAGIAEGBPCAggQABgTGAcYHpgDAIgGAZIHAzQuMqAHmRU&sclient=gws-wiz-serp#vhid=GwNfepN1dQWjCM&vssid=mosaic","","https://www.google.com/search?q=film+netflix&client=ubuntu-chr&hs=cb&sca_esv=92ceaeaabaa7c149&sca_upv=1&udm=2&biw=1178&bih=530&sxsrf=ADLYWIL75Pt5ORRACx9EhrkqKhV5WIjmiA%3A1715746821624&ei=BThEZozdJfTJ1sQP45aTKA&ved=0ahUKEwjM887-5o6GAxX0pJUCHWPLBAUQ4dUDCA8&uact=5&oq=film+netflix&gs_lp=Egxnd3Mtd2l6LXNlcnAiDGZpbG0gbmV0ZmxpeDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSIAMUKsBWIAKcAJ4AJABAJgBaKAB8QKqAQMzLjG4AQPIAQD4AQGYAgagArMDwgIKEAAYgAQYQxiKBcICBhAAGAgYHsICBxAAGIAEGBPCAggQABgTGAcYHpgDAIgGAZIHAzQuMqAHmRU&sclient=gws-wiz-serp#vhid=ZbDlXPg5CU1wmM&vssid=mosaic","https://www.google.com/search?q=film+netflix&client=ubuntu-chr&hs=cb&sca_esv=92ceaeaabaa7c149&sca_upv=1&udm=2&biw=1178&bih=530&sxsrf=ADLYWIL75Pt5ORRACx9EhrkqKhV5WIjmiA%3A1715746821624&ei=BThEZozdJfTJ1sQP45aTKA&ved=0ahUKEwjM887-5o6GAxX0pJUCHWPLBAUQ4dUDCA8&uact=5&oq=film+netflix&gs_lp=Egxnd3Mtd2l6LXNlcnAiDGZpbG0gbmV0ZmxpeDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSIAMUKsBWIAKcAJ4AJABAJgBaKAB8QKqAQMzLjG4AQPIAQD4AQGYAgagArMDwgIKEAAYgAQYQxiKBcICBhAAGAgYHsICBxAAGIAEGBPCAggQABgTGAcYHpgDAIgGAZIHAzQuMqAHmRU&sclient=gws-wiz-serp#vhid=pppzBQOzYNe3-M&vssid=mosaic","https://www.google.com/search?q=film+netflix&client=ubuntu-chr&hs=cb&sca_esv=92ceaeaabaa7c149&sca_upv=1&udm=2&biw=1178&bih=530&sxsrf=ADLYWIL75Pt5ORRACx9EhrkqKhV5WIjmiA%3A1715746821624&ei=BThEZozdJfTJ1sQP45aTKA&ved=0ahUKEwjM887-5o6GAxX0pJUCHWPLBAUQ4dUDCA8&uact=5&oq=film+netflix&gs_lp=Egxnd3Mtd2l6LXNlcnAiDGZpbG0gbmV0ZmxpeDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSIAMUKsBWIAKcAJ4AJABAJgBaKAB8QKqAQMzLjG4AQPIAQD4AQGYAgagArMDwgIKEAAYgAQYQxiKBcICBhAAGAgYHsICBxAAGIAEGBPCAggQABgTGAcYHpgDAIgGAZIHAzQuMqAHmRU&sclient=gws-wiz-serp#vhid=hQ6Y_Sot-mrMtM&vssid=mosaic","https://www.google.com/search?q=film+netflix&client=ubuntu-chr&hs=cb&sca_esv=92ceaeaabaa7c149&sca_upv=1&udm=2&biw=1178&bih=530&sxsrf=ADLYWIL75Pt5ORRACx9EhrkqKhV5WIjmiA%3A1715746821624&ei=BThEZozdJfTJ1sQP45aTKA&ved=0ahUKEwjM887-5o6GAxX0pJUCHWPLBAUQ4dUDCA8&uact=5&oq=film+netflix&gs_lp=Egxnd3Mtd2l6LXNlcnAiDGZpbG0gbmV0ZmxpeDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSIAMUKsBWIAKcAJ4AJABAJgBaKAB8QKqAQMzLjG4AQPIAQD4AQGYAgagArMDwgIKEAAYgAQYQxiKBcICBhAAGAgYHsICBxAAGIAEGBPCAggQABgTGAcYHpgDAIgGAZIHAzQuMqAHmRU&sclient=gws-wiz-serp#vhid=Q-FdE1g0Ms91CM&vssid=mosaic","https://www.google.com/search?q=film+netflix&client=ubuntu-chr&hs=cb&sca_esv=92ceaeaabaa7c149&sca_upv=1&udm=2&biw=1178&bih=530&sxsrf=ADLYWIL75Pt5ORRACx9EhrkqKhV5WIjmiA%3A1715746821624&ei=BThEZozdJfTJ1sQP45aTKA&ved=0ahUKEwjM887-5o6GAxX0pJUCHWPLBAUQ4dUDCA8&uact=5&oq=film+netflix&gs_lp=Egxnd3Mtd2l6LXNlcnAiDGZpbG0gbmV0ZmxpeDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSIAMUKsBWIAKcAJ4AJABAJgBaKAB8QKqAQMzLjG4AQPIAQD4AQGYAgagArMDwgIKEAAYgAQYQxiKBcICBhAAGAgYHsICBxAAGIAEGBPCAggQABgTGAcYHpgDAIgGAZIHAzQuMqAHmRU&sclient=gws-wiz-serp#vhid=3CUKVNwLXH5XBM&vssid=mosaic","https://www.google.com/search?q=film+netflix&client=ubuntu-chr&hs=cb&sca_esv=92ceaeaabaa7c149&sca_upv=1&udm=2&biw=1178&bih=530&sxsrf=ADLYWIL75Pt5ORRACx9EhrkqKhV5WIjmiA%3A1715746821624&ei=BThEZozdJfTJ1sQP45aTKA&ved=0ahUKEwjM887-5o6GAxX0pJUCHWPLBAUQ4dUDCA8&uact=5&oq=film+netflix&gs_lp=Egxnd3Mtd2l6LXNlcnAiDGZpbG0gbmV0ZmxpeDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSIAMUKsBWIAKcAJ4AJABAJgBaKAB8QKqAQMzLjG4AQPIAQD4AQGYAgagArMDwgIKEAAYgAQYQxiKBcICBhAAGAgYHsICBxAAGIAEGBPCAggQABgTGAcYHpgDAIgGAZIHAzQuMqAHmRU&sclient=gws-wiz-serp#vhid=kfwUjGibLh3C9M&vssid=mosaic"};
+        String[] url_images = {"https://resizing.flixster.com/P3ITKQPm33gw4K73O9DYCOfyZ4E=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzQ1Zjg4NDFhLWMxY2EtNDU3NC04OTNmLTQ4MTJiMzc3Y2EwZC5qcGc=","https://m.media-amazon.com/images/M/MV5BMjMwOTg0MzU4MV5BMl5BanBnXkFtZTgwODk2NjY3NTM@._V1_FMjpg_UX1000_.jpg","https://i.blogs.es/485f6e/la-cocina-poster-netflix/650_1200.jpeg","","https://hips.hearstapps.com/hmg-prod/images/best-movies-on-netflix-the-mother-6478b59716093.jpg?crop=1xw:1xh;center,top&resize=980:*","https://images.ctfassets.net/4cd45et68cgf/aXpogGacw8gMlQ1myxRWp/c0957190d2702297172da00f40504d26/EN_TheStranger_Main_Vertical_RGB_PRE.jpeg?w=2000","https://dnm.nflximg.net/api/v6/2DuQlx0fM4wd1nzqm5BFBi6ILa8/AAAAQdgH3RALdcp56UKYjGvh4BNjeYx0P7FSUtRlSLGZKovtkdBk2t3REeqhksKzacXzUOjwB-JiReDl7_Z325iB4hkpNjNEeWY5oTJBRP8MIS9OVOfsQnWGsWhIMASTHuGkF5E2D64Iw_jDQ0CLxHnic1fx.jpg?r=cb5","https://dnm.nflximg.net/api/v6/2DuQlx0fM4wd1nzqm5BFBi6ILa8/AAAAQQcSyUZXYH0zIJq5_WrcSpUssMlnlebBWLLTZFPPsME7WHre1BTNYwGb1AfHeubWJB0GW5BVPEbzSFoeVySfP3t7TGXWSV7_3GwiruRSReFlK-CY3lwV8gn0p1rHMX1C-h-XzvuMowAxuCGFUy17lyE8.jpg?r=0e1","https://dnm.nflximg.net/api/v6/WNk1mr9x_Cd_2itp6pUM7-lXMJg/AAAABTC2JsuNgSQgERC4agDGf6dogj_kAv-Gox_jgmPIfSeB-wKve6yn5LbXA6lw26OUm0dzzXG0VLmUeajNYBRQ9hSHauFRxVCYXxhylk5YmplXSGSaqxyz9c1KWBmN0fgmNK6kSQ.jpg?r=c6c","https://images.ctfassets.net/4cd45et68cgf/3tCOzPxx4SdNL8gBcC8Dp6/1a6ba2f129270f78d44cb3be6a123687/EN-GB_Paradise_Main_Vertical_RGB_PRE__1_.jpg"};
         String url_trailer = "https://www.youtube.com/watch?v=cFS4Zcd_kb8&ab_channel=astounding";
 
-        Subscription started = findOrCreateSubscription("Started", 9.99);
-        Subscription premium = findOrCreateSubscription("Premium", 19.99);
+        Subscription started = subscriptionService.findOrCreateSubscription("Started", 9.99);
+        Subscription premium = subscriptionService.findOrCreateSubscription("Premium", 19.99);
+
+           // Use these managed entities for further operations
+        if (started == null) {
+            started = subscriptionRepository.save(new Subscription("Started", 9.99));
+        }
+        if (premium == null) {
+            premium = subscriptionRepository.save(new Subscription("Premium", 19.99));
+        }
 
         for (int i = 0; i < 10; i++) {
             if (i == 0) {
-                findOrCreateUser("admin", "admin1234", true, premium);
+                userService.findOrCreateUser("admin", passwordEncoder.encode("admin1234"), true, premium);
             } else if (i % 2 == 0) {
-                findOrCreateUser(faker.name().username(), faker.internet().password(), false, started);
+                userService.findOrCreateUser(faker.name().username(), passwordEncoder.encode(faker.internet().password()), false, started);
             } else {
-                findOrCreateUser(faker.name().username(), faker.internet().password(), false, premium);
+                userService.findOrCreateUser(faker.name().username(), passwordEncoder.encode(faker.internet().password()), false, premium);
             }
         }
 
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 10; i++) {
             Set<Subscription> subscriptions = new HashSet<>();
             if (i % 2 == 0) {
                 subscriptions.add(started);
             } else {
                 subscriptions.add(premium);
             }
-            findOrCreateMovie(faker.book().title(), faker.lorem().paragraph(), faker.book().genre(), url_images[i], url_trailer, subscriptions);
+            movieService.findOrCreateMovie(faker.book().title(), faker.lorem().paragraph(), faker.book().genre(), url_images[i], url_trailer, subscriptions);
         }
 
         System.out.println("Seeders creados exitosamente.");
